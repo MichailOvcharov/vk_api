@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Добавление id пользователя</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/style.css}"/>
+</head>
+<body>
+<form  action="#" th:action="@{/user-create}" th:object="${user}" method="post">
+    <h3>Добавление id Пользователя в базу: </h3>
+    <br/>
+    <div >
+        <label for="userId">Id Пользователя в Контакте: </label>
+        <input style = "padding: 5px 15px;" type="text" th:field="*{userId}" id="userId" placeholder="Id Пользователя"/>
+    </div>
+    <br/>
+    <input class="c" type="submit" value="Добавление id пользователя"/>
+</form>
+<br/>
+    <p><a href="/main" class="c" >На главную</a></p>
+</body>
+</html>

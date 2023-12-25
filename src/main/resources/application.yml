@@ -1,0 +1,21 @@
+server:
+ port: 8084
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/vk_db
+    username: postgres
+    password: ctumso
+    driver-class-name: org.postgresql.Driver
+    sslfactory: org.postgresql.ssl.NonValidatingFactory
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        format-sql: true
+        accessToUnderlyingConnectionAllowed: true
+        database-platform: org.hibernate.dialect.PostgreSQL10Dialect
+
+access_token: f204ca28f204ca28f204ca28c9f1127cb5ff204f204ca2897825302b7e855d93fd7ba94
+v: 5.199
+pool_size: 3
